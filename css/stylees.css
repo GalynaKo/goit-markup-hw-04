@@ -44,8 +44,7 @@ background-color: #ffffff;
     margin-right: auto;
     padding-left: 15px;
     padding-right: 15px;
-    outline: 5px solid green;
-    background-color:violet;
+    
 }
 img{
     display: block;
@@ -85,7 +84,6 @@ header{
 .container-header{
     padding-top: 24px;
     padding-bottom: 24px;
-  
 }
 .header-site-nav>li:not(:last-child){
     margin-right: 50px;
@@ -148,6 +146,10 @@ header{
        
         padding-top: 200px;
         padding-bottom: 200px;
+        background-image:linear-gradient(
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)),
+           url(../images/bg-hero.jpg);
         
 }
 
@@ -193,8 +195,8 @@ header{
     
 }
 .section-primery{
-    margin-top: 94px;
-    margin-bottom: 94px
+    padding-top: 94px;
+    padding-bottom: 94px
 }
 .section-primery-item {
     
@@ -205,6 +207,15 @@ header{
 }
 
 
+.section-primery-svg-item{
+    width: 270px;
+    height: 120px;
+    background: #F5F4FA;
+    border-radius: 4px;display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
 .section-primery-text-title {
 
     font-weight: 700;
@@ -233,7 +244,7 @@ header{
 .work-list
 {   display: flex;
     text-align: center;
-gap: 30px;
+    gap: 30px;
 }
 
 .section-description-title{ 
@@ -252,7 +263,7 @@ gap: 30px;
     margin-bottom:0;
     padding-top: 94px;
     padding-bottom: 94px; /*как писать padding для img?*/
-
+    background: #F5F4FA;
 }
 .team {
 background: #FFFFFF;
@@ -262,9 +273,14 @@ background: #FFFFFF;
     border-radius: 0px 0px 4px 4px;
 
 }
+.team-soc-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 .team-item{
     padding-top:  30px; ;
-    padding-bottom:  30px; ;
+ ;
 
 }
 .section-team-title{
@@ -292,14 +308,94 @@ background: #FFFFFF;
         font-size: 16px;
         line-height: calc(19/16);
         margin-top: 10px;
-        margin-bottom: 0;
+        margin-bottom: 16px;
       
 }
+.team-soc{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+  
+}
+
+.team-soc-link{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.team-soc-link:hover
+{
+ background-color:#2196F3;
+
+}
+.team-soc-link:hover .team-soc-icon{
+    fill: #FFFFFF;
+}
+.team-soc-icon{
+    fill: #AFB1B8;
+}
+.team-soc-item{
+    margin-bottom: 30px;
+}
+.section-сlients {
+    margin-top: 94px;
+    margin-bottom: 94px;
+}
+
+.section-сlients-title {
+    color: var(--title-text-color);
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(42/36);
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.clients-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    margin-top: 50px;
+    
+}
+
+.clients-brand {
+    width: 170px;
+    height: 92px;
+    border-radius: 4px;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #AFB1B8;
+    
+} 
+.clients-brand:hover{
+    border: 1px solid #2196F3;
+}
+.clients-brand:hover .clients-brand-icon{
+    fill: #2196F3;
+}
+.clients-brand-icon{
+    fill: #AFB1B8;
+}
+
 .footer{
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
+    display: flex;
+    
 }
+.footer >.container
+
 .footer-cursor{
     cursor:none;
 }
@@ -335,6 +431,70 @@ background: #FFFFFF;
     letter-spacing: 0.03em;
    
 }
+
+
+.join-soc{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+  gap: 10px;
+  
+}
+.join-title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto';
+    
+       
+ font-weight: 700;
+ font-size: 14px;
+ line-height:calc(16/14);
+ letter-spacing: 0.03em;
+ color: #ffffff ;
+ margin-top: 0;
+ margin-bottom: 0;
+}
+/*.team-soc-link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.team-soc-link:hover {
+    background-color: #2196F3;
+
+}
+
+.team-soc-link:hover .team-soc-icon {
+    fill: #FFFFFF;*/
+.join-soc-item{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: 
+    rgba(255, 255, 255, 0.1);
+ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.join-soc-item:hover {
+    background-color:var(--accent-color);
+}
+.join-soc-icon{
+    fill:#ffffff;
+    
+}
+
+
+
 .visually-hidden {
     /* Contain text within 1px box */
     height: 1px;
