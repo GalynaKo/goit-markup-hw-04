@@ -125,6 +125,11 @@ header{
 .header-contact:focus {
     color: var(--accent-color);
 }
+
+.header-contact:hover .site-nav-icon{
+ fill:#2196F3;
+}
+
 .header-contact {
  color: var(--primary-text-color);
  font-weight: 500;
@@ -155,6 +160,8 @@ header{
         rgba(47, 48, 58, 0.4)),
            url(../images/bg-hero.jpg);
         max-width: 1600px;
+        margin: 0 auto;
+
         
 }
 
@@ -306,7 +313,7 @@ background: #FFFFFF;
         font-size: 16px;
         line-height: calc(19/16);
         color: #212121;
-        margin-top: 30px;
+        margin-top: 0;
         margin-bottom: 0;
 }
 .section-team-text{
@@ -333,12 +340,14 @@ background: #FFFFFF;
     justify-content: center;
     align-items: center;
 }
-.team-soc-link:hover
+.team-soc-link:hover,
+.team-soc-link:focus
 {
  background-color:#2196F3;
 
 }
-.team-soc-link:hover .team-soc-icon{
+.team-soc-link:hover ,
+.team-soc-link:focus .team-soc-icon{
     fill: #FFFFFF;
 }
 .team-soc-icon{
@@ -383,7 +392,9 @@ background: #FFFFFF;
     border: 1px solid #AFB1B8;
     
 } 
-.clients-brand:hover{
+.clients-brand:hover,
+.clients-brand:focus
+{
     border: 1px solid #2196F3;
 }
 .clients-brand:hover .clients-brand-icon{
@@ -397,26 +408,32 @@ background: #FFFFFF;
     background: #2F303A;
     padding-top: 60px;
     padding-bottom: 60px;
-    display: flex;
+    
     
 }
-.footer >.container
+.footer >.container{
+    display: flex;
+    margin-left: 215px;
+}
 
 .footer-cursor{
     cursor:none;
 }
 .footer .logo{
     color: #FFFFFF;
-    margin-bottom: 20px;
+    
 
    
+}
+.footer-list{
+    margin-top: 20px;
 }
 .footer-title{
     color:var(--accent-color);
 }
-.address{
-    margin-top: 9px;
-    margin-bottom: 0;
+.footer-list-address:nth-child(){
+    margin-top: 0px;
+    margin-bottom: 9px;
 }
 .footer .address{
 
@@ -437,7 +454,10 @@ background: #FFFFFF;
     letter-spacing: 0.03em;
    
 }
+.join{
+    margin-left: 70px;
 
+}
 
 .join-soc{
   display: flex;
@@ -449,7 +469,7 @@ background: #FFFFFF;
 }
 .join-title{
     display: flex;
-    justify-content: center;
+    
     align-items: center;
     font-family: 'Roboto';
     
